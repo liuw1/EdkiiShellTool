@@ -59,6 +59,8 @@
   OpensslLib|CryptoPkg/Library/OpensslLib/OpensslLib.inf
   RngLib|MdePkg/Library/BaseRngLibTimerLib/BaseRngLibTimerLib.inf
   
+  TdxLib|MdePkg/Library/TdxLib/TdxLib.inf
+  
   SmmChildDumpLib|EdkiiShellToolPkg/EdkiiCoreDatabaseDump/Library/SmmChildDumpLibNull/SmmChildDumpLibNull.inf
   #SmmChildDumpLib|EdkiiShellToolPkg/EdkiiCoreDatabaseDump/Library/SmmChildDumpLibNt32/SmmChildDumpLib.inf
 
@@ -139,6 +141,8 @@
   EdkiiShellToolPkg/BootOption/BootOption.inf
 
   EdkiiShellToolPkg/DumpVirtioPciDev/DumpVirtioPciDev.inf
+
+  EdkiiShellToolPkg/RtmrDump/RtmrDump.inf
 
 [BuildOptions]
   MSVC:DEBUG_*_*_DLINK_FLAGS = /EXPORT:InitializeDriver=$(IMAGE_ENTRY_POINT) /BASE:0x10000 /ALIGN:4096 /FILEALIGN:4096 /SUBSYSTEM:CONSOLE
